@@ -1,0 +1,85 @@
+/*
+// Author: Tomi
+// Date: 06/01/2022
+// Purpose: Shopify project
+// Images gotten from www.vhv.rs
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /*Font imported*/
+
+* {
+    font-family: 'Montserrat', sans-serif; /*Font used on website*/
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+    background-image: url("../img/background.jpg");
+}
+
+body{
+    background-color: transparent;
+}
+
+#container{
+    padding: 0 40px;
+    border: solid 1px grey;
+    width: 40%;
+    margin: 15px auto auto auto;
+    background-color: white;
+    border-radius: 0.5em;
+    font-size: 20px;
+}
+
+.btn-block{
+    width: 30%;
+}
+
+button{
+    margin: auto;
+}
+.navbar{
+    width: 100%;
+}
+
+input{
+    display: block;
+}
+
+.post img{
+    border-radius: 20px;
+    max-width: 80%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.feed{
+    background-color: #F6F6F7;
+}
+
+.post{
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.large-font{
+    font-size:xx-large;
+}
+ion-icon.active{
+    animation:like 0.5s 1;
+    fill:black;
+    stroke:none;
+}
+ion-icon{
+    fill:transparent;
+    stroke:black;
+    stroke-width:30;
+    transition:all 0.5s;
+}
+
+@-webkit-keyframes like {
+    0%   { transform: scale(1); }
+    90%   { transform: scale(1.4); }
+    100% { transform: scale(1.1); }
+}
